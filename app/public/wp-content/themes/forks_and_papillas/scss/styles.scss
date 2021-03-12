@@ -1,0 +1,28 @@
+//----------------| GLOBAL |------------------//
+
+@import 'global/_variables';
+@import 'global/_mixins';
+@import 'global/_fonts';
+@import 'global/_keyframes.scss';
+@import 'global/_utilities.scss';
+@import 'global/_responsives.scss';
+@import 'global/_utilities.scss';
+@import 'global/_general.scss';
+@import 'global/_cta.scss';
+
+//----------------| LAYOUTS |------------------//
+
+@import "layouts/_menu.scss";
+@import "layouts/_sub-menu.scss";
+@import "layouts/_list-articles";
+@import "layouts/_single.scss";
+
+@import "layouts/_footer.scss";
+
+//----------------| COMPONENTS |------------------//
+@import "components/_card.scss";
+
+
+//----------------| PAGES |------------------//
+@import "archive";
+@import "home";
