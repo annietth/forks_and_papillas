@@ -19,6 +19,8 @@ wp-content/themes/forks_and_papillas/node_modules
 
 /css/styles.css
 /css/styles.css.map
+app/public/wp-content/themes/forks_and_papillas/css/styles.css
+app/public/wp-content/themes/forks_and_papillas/css/styles.css.map
 
 
 /.htaccess
