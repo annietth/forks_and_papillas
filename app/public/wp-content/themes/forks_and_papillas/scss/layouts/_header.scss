@@ -1,0 +1,30 @@
+.header {
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    .logo {
+      width: 30px;
+      height: 20px;
+      background-color: red;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    li {
+      list-style-type: none; 
+      padding: 16px 24px;
+           
+    }
+  }
+}
