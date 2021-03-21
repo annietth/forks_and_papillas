@@ -1,30 +1,227 @@
 .header {
-
+  position: relative;
+  height: 85px;
+  min-width: 100vw;
+  @include flexbox(column, center, inherit);
+  
   &__container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    padding: 0 24px;
+    @include flexbox(row, flex-start, center);
     max-width: 1220px;
-    margin: 0 auto;
+    height: 100%;
+    min-width: 100%;
+    border-bottom: 1px solid #eef2f6;
+    box-shadow: 0 0 16px rgba(51, 51, 51, 0.1);
+
+    @include desktop-up {
+      padding: 0 48px;
+      @include flexbox(row, flex-start, space-between);
+    }
   }
+
+  &__burgerContainer {
+    width: 35px;
+    height: 28px;
+    @include flexbox(column, center, space-between);
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    
+
+    @include tablet-up {
+      display: none;
+    }
+
+    .burger-line {
+      transition: 500ms;
+      background-color: $yellow;
+      margin: 1px 0;
+      height: 6px;
+    }
+    .burger-line:nth-of-type(odd) {
+      width: 24px;
+    }
+    .burger-line:nth-of-type(even) {
+      width: 34px;
+    }
+
+    .close-text {
+      display: none;
+      font-family: $open_sansregular;
+    }
+    
+
+    &.is-clicked {
+      
+      .burger-line:nth-of-type(odd) {
+        width: 34px;
+        transition: 500ms;
+      }
+
+      .burger-line {
+        background-color: $black-light;
+      }
+
+      .close-text {
+        display: flex;
+        position: absolute;
+        right: -45px;
+      }
+    }
+  }
+
 
   &__logo {
-    .logo {
-      width: 30px;
-      height: 20px;
-      background-color: blue;
+    position: absolute;
+    right: 24px;
+    z-index: 2;
+    cursor: pointer;
+
+
+    @include tablet-up {
+      position: relative;
+      display: flex;
+      right: 0;
+
+    }
+
+  }
+
+  .header__window {
+
+    @include tablet-up {
+      margin-left: 32px;
+    }
+    .header__items {
+      display: none;
+
+      @include tablet-up {
+        display: flex;
+        margin: 0 auto;
+
+      }
+
+      .header__item {
+        list-style-type: none; 
+        padding: 16px 24px;
+        font-size: 32px;  
+        font-weight: 600;
+
+        @include tablet-up {
+          font-size: 16px;  
+          padding: 16px;
+        }
+
+        @include desktop-up {
+          font-size: 18px;  
+          padding: 16px 24px;
+        }
+        
+        a {
+          text-decoration: none;
+          color: $black-light;
+          font-family: $proza;
+        }
+           
+      }
     }
   }
-  &__items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 
-
-    li {
-      list-style-type: none; 
-      padding: 16px 24px;
+  .menu-is-open {
+    .header__window {
+      background-color: $whiteKC;
+      display: none;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+  
+      .header__items {
+        @include flexbox(column, space-evenly, center);
+        text-align: center;
+        padding: 0;
+        
+        .newsletter-container {
+          font-size: 24px;  
+          background-color: $yellow;
+          border-radius: 50px;
+          padding: 8px 24px;
+          max-width: 210px;
+          margin: 16px auto 0;
            
+          a {
+            color: $whiteKC;
+          }
+        }
+      }
     }
+  }
+
+
+
+}
+
+.subnavbar {
+  margin: 0 auto;
+  
+  &__container {
+    padding: 24px;
+    max-width: 1220px;
+    border-bottom: 1px solid #eef2f6;
+    margin: 0 auto;
+
+    
+    @include tablet-up {
+      padding: 24px 80px;
+    }
+  }
+
+  &__items {
+    padding: 0;
+    list-style-type: none; 
+    @include flexbox(row, flex-start, center);
+    flex-wrap: wrap;
+    margin: 0;
+
+    @include desktop-up {
+      justify-content: space-evenly;
+    }
+
+  }
+
+  &__item {
+    font-size: 14px;  
+    background-color: $yellow;
+    border-radius: 50px;
+    padding: 8px 24px;
+    margin: 4px;
+    transition: all 0.3s ease-in-out ;
+
+    @include desktop-up {
+      margin: 0 4px;
+    }
+
+    
+    &:hover {
+      background-color: #F9A826;
+    }
+     
+    a {
+      text-decoration: none;
+      color: $black-light;
+      font-family: $proza;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 20px;
+        margin-right: 8px;
+      }
+    }
+
   }
 }

@@ -19,6 +19,7 @@ add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
 function forks_and_papillas_scripts() {
 	wp_enqueue_style('style-css', get_template_directory_uri() . '/css/styles.css');
+	wp_enqueue_script('scripts-js', get_template_directory_uri() . '/js/all.min.js', array('jquery'), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'forks_and_papillas_scripts');
