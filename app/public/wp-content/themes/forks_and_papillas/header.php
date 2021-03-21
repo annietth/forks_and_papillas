@@ -20,7 +20,9 @@
                 <p class="close-text">Close</p>
             </div>
             <div class="header__logo">
-                <img class="logo" src="<?= get_template_directory_uri(); ?>/img/logo_fp.svg"></img>
+                <a href="<?= get_home_url() ?>">
+                    <img class="logo" src="<?= get_template_directory_uri(); ?>/img/logo_fp.svg"></img>
+                </a>
             </div>
             <div class="header__window">
                 <ul class="header__items">
@@ -32,3 +34,42 @@
             </div>
         </div>
     </header>
+
+    <div class="subnavbar">
+        <div class="subnavbar__container">
+            <ul class="subnavbar__items">
+                <li class="subnavbar__item">
+                    <a href="">
+                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
+                    Français
+                    </a>
+                </li>
+                <li class="subnavbar__item">
+                    <a href="">
+                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
+                    Italien
+                    </a>
+                </li>
+                <li class="subnavbar__item">
+                    <a href="">
+                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
+                    Orientale</a>
+                </li>
+                <li class="subnavbar__item">
+                    <a href="">
+                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
+                    Créole</a>
+                </li>
+                <li class="subnavbar__item">
+                    <a href="">
+                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
+                    Vietnamien</a>
+                </li>
+                <li class="subnavbar__item">
+                    <a href="">
+                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
+                    Indonésien</a>
+                </li>
+            </ul>
+        </div>
+    </div>
