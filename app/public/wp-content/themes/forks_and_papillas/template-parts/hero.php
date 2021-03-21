@@ -1,9 +1,9 @@
 
 <div class="hero">
-    <div class="hero__image">
-        <img src= "<?php echo get_template_directory_uri(); ?>/img/hero_mbl.png" alt="image_of_hero">
-         <!-- <img class="image__desktop"src="img/hero_dsktp.png" alt="image_of_desktop"> -->
-    </div>
+    
+    <img style="width:100%"src= "<?php echo get_template_directory_uri(); ?>/img/hero_mbl.png" alt="image_of_hero">
+    <img class="hero__desktop"src="img/hero_dsktp.png" alt="image_of_desktop">
+    
     <div class="hero__texts">
         <h1>Forks And Papillas</h1>
         <marquee class="hero__texts__anime" scrollamount="5" width="400">

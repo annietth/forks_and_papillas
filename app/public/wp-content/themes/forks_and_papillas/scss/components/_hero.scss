@@ -1,11 +1,11 @@
 .hero {
-    &__image{
-        display: block;
-        width: 100%;
+    &__desktop {
+        display: none;
     }
     &__texts {
         h1 {
             font-size: 36px;
+            
         }
         
         
