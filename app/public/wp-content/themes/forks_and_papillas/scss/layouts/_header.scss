@@ -13,7 +13,7 @@
     border-bottom: 1px solid #eef2f6;
     box-shadow: 0 0 16px rgba(51, 51, 51, 0.1);
 
-    @include tablet-up {
+    @include desktop-up {
       padding: 0 48px;
       @include flexbox(row, flex-start, space-between);
     }
@@ -187,7 +187,7 @@
     flex-wrap: wrap;
     margin: 0;
 
-    @include tablet-up {
+    @include desktop-up {
       justify-content: space-evenly;
     }
 
@@ -201,7 +201,7 @@
     margin: 4px;
     transition: all 0.3s ease-in-out ;
 
-    @include tablet-up {
+    @include desktop-up {
       margin: 0 4px;
     }
 
