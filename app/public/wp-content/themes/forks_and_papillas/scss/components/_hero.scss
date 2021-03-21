@@ -1,0 +1,10 @@
+.hero {
+    &__image{
+        display: block;
+        width: 100%;
+    }
+    &__text{
+        font-size: 36px;
+        color: #3333;
+    }
+}
