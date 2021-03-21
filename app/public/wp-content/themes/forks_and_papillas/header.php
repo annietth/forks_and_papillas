@@ -19,9 +19,9 @@
                 <div class="burger-line"></div>
                 <p class="close-text">Close</p>
             </div>
-            <!-- <div class="header__logo">
-                <div class="logo"></div>
-            </div> -->
+            <div class="header__logo">
+                <img class="logo" src="<?= get_template_directory_uri(); ?>/img/logo_fp.svg"></img>
+            </div>
             <div class="header__window">
                 <ul class="header__items">
                     <li class="header__item"><a href="">Accueil</a></li>
