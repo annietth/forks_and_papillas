@@ -6,14 +6,9 @@
     </div>
     <div class="hero__texts">
         <h1>Forks And Papillas</h1>
-        <ul class="hero__texts__anime">
-            <li>Cuisine Oriental</li>
-            <li>Cuisine Vietnamienne</li>
-            <li>Cuisine Française</li>
-            <li>Cuisine Créole</li>
-            <li>Cuisine Italienne</li>
-            <li>Cuisine Indonésienne</li>
-        </ul>
+        <marquee class="hero__texts__anime" scrollamount="5" width="400">
+            Cuisine Oriental - Cuisine Vietnamienne - Cuisine Française - Cuisine Créole -  Cuisine Italienne - Cuisine Indonésienne
+        </marquee>
         <h2 class="hero__text">
             Choisissez <span>le meilleur</span>. <br>
             Plus de <span>100 milles </span>restaurants!
