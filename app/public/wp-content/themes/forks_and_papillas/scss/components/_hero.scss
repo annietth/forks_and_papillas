@@ -1,0 +1,14 @@
+.hero {
+    &__desktop {
+        display: none;
+    }
+    &__texts {
+        h1 {
+            font-size: 36px;
+            color: blue;
+            
+        }
+        
+    }
+
+}
