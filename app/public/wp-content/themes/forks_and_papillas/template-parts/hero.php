@@ -1,4 +1,4 @@
-<marquee class="hero__anime" scrollamount="5" width="500">
+<marquee class="hero__anime" scrollamount="5" width="370">
     Cuisine Oriental - Cuisine Vietnamienne - Cuisine Française - Cuisine Créole -  Cuisine Italienne - Cuisine Indonésienne
 </marquee> 
 <br>
@@ -7,17 +7,17 @@
 
      <div class="hero__texts">
 
-        <h2 class="hero__text">
+        <h1 class="hero__text">
             Choisissez <span>le meilleur</span>. <br>
             Plus de <span>100 milles </span>restaurants!
-        </h2>
+        </h1>
 
         <button>Recherche</button>
         
     </div>
     <div class="hero__image">
-        <img style="width:100%"src= "<?php echo get_template_directory_uri(); ?>/img/hero_mbl.png" alt="image_of_hero">
-        <!-- <img class="hero__desktop" style="width:100%"src= "<?php echo get_template_directory_uri(); ?>/img/hero_dsktp.png" alt="image_of_desktop"> -->
+        <img class="hero__image__mobile" style="width:100%"src= "<?php echo get_template_directory_uri(); ?>/img/hero_mbl.png" alt="image_of_hero">
+        <img class="hero__image__desktop" style="width:100%"src= "<?php echo get_template_directory_uri(); ?>/img/hero_dktp.png" alt="image_of_desktop">
     </div>
 </div>
 
@@ -31,5 +31,9 @@
     <p>
         Suivez notre Newsletter pour ne rater aucune nouvelles
     </p>
+    <form class="subhero__input">
+        <label for="mail"></label>
+        <input type="email" id="mail" name="user_email" placeholder="exemple@gmail.com">
+        <button><img src= "<?php echo get_template_directory_uri(); ?>/img/enter_arrow.svg" alt="enter"></button>
+    </form>
 </div>
-
