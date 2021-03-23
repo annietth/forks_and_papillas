@@ -68,8 +68,10 @@ define('NONCE_SALT',       '9EG5dtnel0TAaFfx4nJpQ13+cRPZPfYGLUqoiErQqPCvvUluYGs7
  */
 $table_prefix = 'wp_';
 
+define('WP_DEBUG', true);
 
-
+// authoriser les nouveaux types de fichiers autorisés 
+define('ALLOW_UNFILTERED_UPLOADS', true);
 
 /* That's all, stop editing! Happy publishing. */
 

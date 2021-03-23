@@ -167,28 +167,43 @@
 
 .subnavbar {
   margin: 0 auto;
+  height: auto;
+
   
   &__container {
-    padding: 24px;
+    padding: 16px 0;
     max-width: 1220px;
     border-bottom: 1px solid #eef2f6;
     margin: 0 auto;
+    overflow-x: scroll;
+    width: 100vw;
 
     
     @include tablet-up {
       padding: 24px 80px;
     }
+
+
   }
 
   &__items {
-    padding: 0;
-    list-style-type: none; 
+    padding: 0 24px;
+    margin: 0;
+    width: max-content;
+    max-width: 500px;
+    height: 100%;
     @include flexbox(row, flex-start, center);
     flex-wrap: wrap;
-    margin: 0;
+    overflow-x: scroll;
+    list-style-type: none; 
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
 
     @include desktop-up {
       justify-content: space-evenly;
+      max-width: none;
     }
 
   }
@@ -212,8 +227,9 @@
      
     a {
       text-decoration: none;
-      color: $black-light;
+      color: $whiteKC;
       font-family: $proza;
+      font-weight: bold;
       display: flex;
       align-items: center;
 
@@ -225,3 +241,4 @@
 
   }
 }
+
