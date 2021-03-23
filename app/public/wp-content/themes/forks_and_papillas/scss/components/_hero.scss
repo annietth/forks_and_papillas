@@ -1,5 +1,5 @@
 marquee {
-
+    font-family: $proza;
     @include tablet-up {
         display: none;
     }
@@ -7,6 +7,7 @@ marquee {
 .hero {
     @include flexbox(row, flex-start, center);
     margin: auto;
+    font-family: $proza;
     
     &__anime {
         font-size: 14px;
