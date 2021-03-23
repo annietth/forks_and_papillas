@@ -1,27 +1,45 @@
 .footer{
     margin-top: 10%;
+    margin-bottom: 2%;
+    font-family: $proza;
     @include flexbox (column, center, inherit);
     &__container{
         padding-left: 7%;
     }
     &__logo{
         text-align: center;
+        @include tablet-up {
+            text-align: left;
+        }
     }
     &__title {
         text-align: center;
         margin-top: 2%;
-        font-family: proza_libremedium,sans-serif;
+        font-family: $proza;
+        @include tablet-up {
+            text-align: left;
+        }
         
     }        
     &__net{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        &__works a {
+        @include tablet-up {
+            @include flexbox (column, center,inherit)
+        }
+        &__works {
+            @include desktop-up {
+                display: grid;
+                padding-right: 50%;
+            }
+
+            a {
             text-decoration: none;
             color: black;
-            font-family: proza_libremedium,sans-serif;
-        }
+            font-family: $proza
+            }
+        }    
         button {
             background-color: $white;
             border: 1px solid $white;
@@ -32,16 +50,28 @@
 
         }
     }
-    
-    &__address {
-        margin-top: 2%;
-        & p {
-            font-family: proza_libremedium,sans-serif;
+    &__tablet {
+        @include tablet-up {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
+        &__address {
+            margin-top: 2%;
+            & p {
+            font-family: $proza;
+            }
+        }
+
     }
     & h4 {
         margin: 6%;
         color: $yellow;
-    }
+        @include tablet-up {
+            display: none !important;
+        }
+    } 
+    
+
 
 }
