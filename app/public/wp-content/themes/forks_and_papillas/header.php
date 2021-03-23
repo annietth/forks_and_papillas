@@ -26,9 +26,15 @@
             </div>
             <div class="header__window">
                 <ul class="header__items">
-                    <li class="header__item"><a href="">Accueil</a></li>
-                    <li class="header__item"><a href="">Qui sommes nous ?</a></li>
-                    <li class="header__item"><a href="">Contact</a></li>
+                    <?php if (have_rows('element', 'options')):
+                        while (have_rows('element', 'options')): the_row(); ?>
+                        <li class="header__item">
+                            <a href="<?php the_sub_field('url'); ?>">
+                            <?php the_sub_field('label'); ?>
+                            </a>
+                        </li>
+
+                    <?php endwhile; endif; ?>
                     <li class="header__item newsletter-container"><a href="">Newsletter</a></li>
                 </ul>
             </div>
