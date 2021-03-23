@@ -1,0 +1,34 @@
+.list-articles {
+	max-width: 1240px;
+	padding: 0 120px;
+	display: flex;
+	margin: 120px auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	@include tablet-up {
+		justify-content: space-between;
+
+		padding: 0;
+		width: 100%;
+	}
+
+	// article {
+	// 	box-shadow: 0px 2px 4px rgba(5, 150, 222, 0.2);
+	// 	width: 384px;
+	// 	// max-height: 342px;
+	// 	border-radius: 8px;
+	// 	background: #FFF;
+	// 	margin-bottom: 32px;
+	// 	transition: all 0.3s;
+	// 	overflow: hidden;
+
+	// 	@include breakpoint(phablet) {
+	// 		margin: 16px;
+	// 	}
+
+	// 	&:hover {
+	// 		transform: translateY(-10px);
+	// 	}
+	// }
+}
