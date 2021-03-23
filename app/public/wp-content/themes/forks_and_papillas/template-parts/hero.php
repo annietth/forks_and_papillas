@@ -1,4 +1,4 @@
-<marquee class="hero__anime" scrollamount="5" width="370">
+<marquee class="hero__anime" scrollamount="5" width="300">
     Cuisine Oriental - Cuisine Vietnamienne - Cuisine Française - Cuisine Créole -  Cuisine Italienne - Cuisine Indonésienne
 </marquee> 
 <br>

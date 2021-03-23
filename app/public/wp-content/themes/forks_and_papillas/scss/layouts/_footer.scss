@@ -1,0 +1,47 @@
+.footer{
+    margin-top: 10%;
+    @include flexbox (column, center, inherit);
+    &__container{
+        padding-left: 7%;
+    }
+    &__logo{
+        text-align: center;
+    }
+    &__title {
+        text-align: center;
+        margin-top: 2%;
+        font-family: proza_libremedium,sans-serif;
+        
+    }        
+    &__net{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__works a {
+            text-decoration: none;
+            color: black;
+            font-family: proza_libremedium,sans-serif;
+        }
+        button {
+            background-color: $white;
+            border: 1px solid $white;
+            color: $white;
+            @include tablet-up {
+                display: none;
+            }
+
+        }
+    }
+    
+    &__address {
+        margin-top: 2%;
+        & p {
+            font-family: proza_libremedium,sans-serif;
+        }
+    }
+    & h4 {
+        margin: 6%;
+        color: $yellow;
+    }
+
+}
