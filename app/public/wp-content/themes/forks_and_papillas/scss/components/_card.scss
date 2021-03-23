@@ -1,19 +1,38 @@
-.container {
-  padding-left: 250px;
-  padding-right: 100px;
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+// .container {
+//   padding-left: 250px;
+//   padding-right: 100px;
+//   width: 90%;
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//   grid-gap: 20px;
+// }
+
+article  {
+  box-shadow: 0px 2px 4px rgba(5, 150, 222, 0.2);
+  width: 390px;
+  height : 350px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  background-image: url(../img/pizza.png);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 32px;
+  transition: all 0.3s;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 }
 
-.box {
-  background-color: red;
-  height: 200px;
-  border: 1px solid black;
-  border-radius: 8px;
-  position: relative;
-}
+// .box {
+// //   background-color: lightblue;
+// //   height: 259px;
+// //   width: 290px;
+// //   border: 1px solid black;
+// //   border-radius: 8px;
+// //   position: relative;
+// // }
 .card__header {
   display: flex;
   justify-content: flex-end;
