@@ -1,14 +1,124 @@
-.hero {
-    &__desktop {
+marquee {
+
+    @include tablet-up {
         display: none;
     }
+}
+.hero {
+    @include flexbox(row, flex-start, center);
+    margin: auto;
+    
+    &__anime {
+        font-size: 14px;
+        font-weight: 900;
+        @include desktop-up {
+            display: none;
+        }
+    } 
+    &__image {
+        &__mobile {
+            display: block;
+            @include desktop-up {
+                display: none;
+                
+            }
+        }
+        &__desktop {
+            display: none;
+            @include desktop-up {
+                display: block;
+                
+            }
+        }   
+    }
     &__texts {
+        
+        width: 80%;
+        margin-left: 6%;
+        @include desktop-up {
+            width: 100%;
+            margin-left: 0;
+        }
+        
         h1 {
-            font-size: 36px;
-            color: blue;
-            
+            font-size: 24px;
+            @include tablet-up {
+                font-size: 36px;
+                padding-bottom: 27%
+            }
+            @include desktop-up{
+                margin-left: 19%;
+                font-size: 40px;
+                padding-bottom:0 ;
+            } 
+        }
+        span {
+            color : $yellow;
+        }
+        button {
+            background-color: $yellow;
+            color: $whiteKC;
+            width: 142px;
+            height: 36px;
+            border: none;
+            font-weight: 900;
+            margin-top: 10%;
+            @include tablet-up {
+                display: none;
+            }
+        }
+    }
+}
+.subhero {
+    font-weight: 900;
+    margin: auto;
+    width: 85%;
+    font-size: 15px;
+    text-align: justify; 
+    margin-top: 8%;
+
+    @include tablet-up {
+        margin: -21% 0 0 6%;
+        width: 65%;
+    }
+    @include desktop-up{
+        padding: 2px;
+        margin: -11% 0 0 12%;
+        width: 48%;
+        font-size: 14px;
+        width: 50%;
+    }
+
+    & button {
+        background-color: $yellow;
+        color: $whiteKC;
+        width: 80px;
+        height: 39px;
+        border: none;
+        font-weight: 900;
+        margin-top: 4%;
+        
+        & img{
+            width: 30px;
+            margin-top: -3%;
+        }
+    }
+
+    & label {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__input {
+        margin-top: 5%;
+        @include tablet-up{
+            margin: 0;
+        }
+        & input{
+            border: 1px $yellow solid;
+            width: 66%;
+            height: 39px; 
         }
         
     }
-
 }
