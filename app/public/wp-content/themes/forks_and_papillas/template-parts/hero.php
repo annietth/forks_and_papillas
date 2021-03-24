@@ -1,12 +1,13 @@
 <?php
-
-    $
-
+    $scrolling_text = get_field('scrolling_text', 'options');
+    $first_sentences = the_field('$first_sentences', 'options');
+    var_dump('$first_sentences');
+    
+    $description = get_field('$description', 'otpions');
 ?>
 
-
 <marquee class="hero__anime" scrollamount="5" width="300">
-Manje kreyol - ăn thức ăn việt - Makan dalam bahasa indonesia - Mangez Français -  Akl lubnaniin - Mangia italiano
+    <?= $scrolling_text; ?>
 </marquee> 
 <br>
 <br>
@@ -15,8 +16,7 @@ Manje kreyol - ăn thức ăn việt - Makan dalam bahasa indonesia - Mangez Fra
      <div class="hero__texts">
 
         <h1 class="hero__text">
-            Choisissez <span>le meilleur</span>. <br>
-            Plus de <span>100 milles </span>restaurants!
+            <?= $first_sentences; ?>
         </h1>
 
         <button>Recherche</button>
