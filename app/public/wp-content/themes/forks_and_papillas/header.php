@@ -11,6 +11,12 @@
     
     <?php wp_body_open(); ?>
 
+    <?php
+
+
+        
+    ?>
+
     <header id="header" class="header">
         <div class="header__container">
             <div class="header__burgerContainer" id="burger">
@@ -27,10 +33,14 @@
             <div class="header__window">
                 <ul class="header__items">
                     <?php if (have_rows('element', 'options')):
-                        while (have_rows('element', 'options')): the_row(); ?>
+                        while (have_rows('element', 'options')): the_row(); 
+                        
+                        $header_item_url = get_sub_field('url');
+                        $header_item_label = get_sub_field('label');?>
+                        
                         <li class="header__item">
-                            <a href="<?php the_sub_field('url'); ?>">
-                            <?php the_sub_field('label'); ?>
+                            <a href="<?= $header_item_url; ?>">
+                            <?= $header_item_label; ?>
                             </a>
                         </li>
 
@@ -44,13 +54,21 @@
     <div class="subnavbar">
         <div class="subnavbar__container">
             <ul class="subnavbar__items">
+            <?php if (have_rows('the_items', 'options')):
+                    while (have_rows('the_items', 'options')): the_row(); 
+
+                    $subnavbar_item_label = get_sub_field('label');
+                    $subnavbar_item_url = get_sub_field('url');?>
+
                 <li class="subnavbar__item">
-                    <a href="">
+                    <a href="<?= $subnavbar_item_url; ?>">
                         <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
-                    Français
+                        <?= $subnavbar_item_label; ?>
                     </a>
                 </li>
-                <li class="subnavbar__item">
+            <?php endwhile; endif; ?>   
+
+                <!-- <li class="subnavbar__item">
                     <a href="">
                         <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
                     Italien
@@ -75,7 +93,7 @@
                     <a href="">
                         <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
                     Indonésien</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
