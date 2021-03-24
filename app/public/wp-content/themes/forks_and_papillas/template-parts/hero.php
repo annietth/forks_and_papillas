@@ -1,5 +1,12 @@
+<?php
+
+    $
+
+?>
+
+
 <marquee class="hero__anime" scrollamount="5" width="300">
-    Cuisine Oriental - Cuisine Vietnamienne - Cuisine Française - Cuisine Créole -  Cuisine Italienne - Cuisine Indonésienne
+Manje kreyol - ăn thức ăn việt - Makan dalam bahasa indonesia - Mangez Français -  Akl lubnaniin - Mangia italiano
 </marquee> 
 <br>
 <br>
