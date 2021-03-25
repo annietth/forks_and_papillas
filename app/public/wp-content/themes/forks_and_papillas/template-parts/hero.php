@@ -1,13 +1,14 @@
 <?php
-    $scrolling_text = get_field('scrolling_text', 'options');
+    $scrollingte_text = get_field('scrollingte_text', 'options');
     $first_sentences = the_field('$first_sentences', 'options');
-    var_dump('$first_sentences');
+    
+
     
     $description = get_field('$description', 'otpions');
 ?>
 
 <marquee class="hero__anime" scrollamount="5" width="300">
-    <?= $scrolling_text; ?>
+    <?= $scrollingte_text; ?>
 </marquee> 
 <br>
 <br>
