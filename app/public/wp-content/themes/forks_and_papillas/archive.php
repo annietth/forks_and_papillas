@@ -1,17 +1,11 @@
 <?php get_header(); ?>
 
-<?php 
-
-var_dump(get_term_link ($type_cuisine , $taxonomie  =  'creole-food' ))
-
-
-?>
-
-<h1>coucocuuuu</h1>
 
 
 
 <div class="list-articles">
+
+<h1>archive.php</h1>
 
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); 
 	
