@@ -35,9 +35,6 @@
                 ?>
                     <a href="<?= $social_url; ?>"> <?= $social_label; ?> </a>
                 <?php endwhile; endif; ?>
-                    <!-- <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Newsletter</a>   -->
                 </div>
             <button class="footer__net__up">
                 <img class="logo" src="<?= get_template_directory_uri(); ?>/img/arrow_up.svg"></img>

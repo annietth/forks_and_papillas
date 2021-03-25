@@ -1,5 +1,12 @@
+<?php
+    $scrollingte_text = get_field('scrollingte_text', 'options');
+    $first_sentences = get_field('first_sentences', 'options'); 
+    $description = get_field('description', 'otpions');
+    $follow_newsletter = get_field('follow_newsletter', 'options');
+?>
+
 <marquee class="hero__anime" scrollamount="5" width="300">
-    Cuisine Oriental - Cuisine Vietnamienne - Cuisine Française - Cuisine Créole -  Cuisine Italienne - Cuisine Indonésienne
+    <?= $scrollingte_text; ?>
 </marquee> 
 <br>
 <br>
@@ -8,8 +15,7 @@
      <div class="hero__texts">
 
         <h1 class="hero__text">
-            Choisissez <span>le meilleur</span>. <br>
-            Plus de <span>100 milles </span>restaurants!
+            <?= get_field('first_sentences', 'options'); ?>
         </h1>
 
         <button>Recherche</button>
@@ -23,13 +29,12 @@
 
 <div class="subhero">
     <p>
-        À la recherche du bon restaurent, en cette pandémie aider vos restaurateurs en les soutenants au mieux ! Nous sommes en collaborations avec plusieurs chefs et proposons le meilleurs pour vous.
-
+        <?= get_field('description', 'options'); ?>
     </p>
     <br>
     <br>
     <p>
-        Suivez notre Newsletter pour ne rater aucune nouvelles
+        <?= get_field('follow_newsletter', 'options'); ?>
     </p>
     <form class="subhero__input">
         <label for="mail"></label>
