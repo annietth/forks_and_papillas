@@ -44,3 +44,13 @@
 
   }
 }
+
+
+@mixin scale-animation-light {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
