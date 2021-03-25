@@ -60,40 +60,13 @@
                     $subnavbar_item_label = get_sub_field('label');
                     $subnavbar_item_url = get_sub_field('url');?>
 
-                <li class="subnavbar__item">
-                    <a href="<?= $subnavbar_item_url; ?>">
+                <li class="subnavbar__item" data-taxo-type="<?= $subnavbar_item_label; ?>">
+                    <a href="<?php echo trailingslashit(get_home_url().'/type_cuisine/italianfood/')?>">
                         <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
                         <?= $subnavbar_item_label; ?>
                     </a>
                 </li>
             <?php endwhile; endif; ?>   
-
-                <!-- <li class="subnavbar__item">
-                    <a href="">
-                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
-                    Italien
-                    </a>
-                </li>
-                <li class="subnavbar__item">
-                    <a href="">
-                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
-                    Orientale</a>
-                </li>
-                <li class="subnavbar__item">
-                    <a href="">
-                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
-                    Créole</a>
-                </li>
-                <li class="subnavbar__item">
-                    <a href="">
-                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
-                    Vietnamien</a>
-                </li>
-                <li class="subnavbar__item">
-                    <a href="">
-                        <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
-                    Indonésien</a>
-                </li> -->
             </ul>
         </div>
     </div>

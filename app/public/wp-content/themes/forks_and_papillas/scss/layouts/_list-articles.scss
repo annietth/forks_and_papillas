@@ -1,13 +1,13 @@
 .list-articles {
-	max-width: 1240px;
-	padding: 0 120px;
+	max-width: 1120px;
+	padding: 0 24px;
 	display: flex;
 	margin: 120px auto;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 
 	@include tablet-up {
-		justify-content: space-between;
+		justify-content: center;
 
 		padding: 0;
 		width: 100%;

@@ -1,5 +1,5 @@
 <?php 
-$taxonomies = get_the_terms(get_the_ID(), 'type-cuisine'); 
+$taxonomies = get_the_terms(get_the_ID(), 'type_cuisine'); 
 
 if($taxonomies) {
   $taxonomy = $taxonomies[0]->name;
@@ -19,7 +19,7 @@ $post_id = get_the_ID();
     if ( has_post_thumbnail() ) :
       echo get_the_post_thumbnail($post_id, array(543, 428)); 
     else:
-      echo '<img width="643" height="528" alt="img default" src="'. get_template_directory_uri()  . '/img/pizza.png">';
+      echo '<img width="643" height="528" alt="img default" src="'. get_template_directory_uri()  . '/img/pizza.jpg">';
     endif;
     ?>
 </div>
