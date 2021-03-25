@@ -5,6 +5,7 @@ marquee {
     }
 }
 .hero {
+    
     @include flexbox(row, flex-start, center);
     margin: auto;
     font-family: $proza;
@@ -42,15 +43,18 @@ marquee {
         }
         
         h1 {
+            max-width: 1250px;
             font-size: 24px;
             @include tablet-up {
-                font-size: 36px;
-                padding-bottom: 27%
+                font-size: 33px;
+                padding-bottom: 33%;
             }
             @include desktop-up{
+                width: 100%;
                 margin-left: 19%;
-                font-size: 40px;
-                padding-bottom:0 ;
+                font-size: 33px;
+                padding-bottom: 0;
+                
             } 
         }
         span {
