@@ -1,5 +1,5 @@
 <?php 
-$taxonomies = get_the_terms(get_the_ID(), 'type-cuisine'); 
+$taxonomies = get_the_terms(get_the_ID(), 'type_cuisine'); 
 
 if($taxonomies) {
   $taxonomy = $taxonomies[0]->name;
