@@ -2,6 +2,7 @@
     $scrollingte_text = get_field('scrollingte_text', 'options');
     $first_sentences = get_field('first_sentences', 'options'); 
     $description = get_field('description', 'otpions');
+    $follow_newsletter = get_field('follow_newsletter', 'options');
 ?>
 
 <marquee class="hero__anime" scrollamount="5" width="300">
@@ -28,13 +29,12 @@
 
 <div class="subhero">
     <p>
-        À la recherche du bon restaurent, en cette pandémie aider vos restaurateurs en les soutenants au mieux ! Nous sommes en collaborations avec plusieurs chefs et proposons le meilleurs pour vous.
-
+        <?= get_field('description', 'options'); ?>
     </p>
     <br>
     <br>
     <p>
-        Suivez notre Newsletter pour ne rater aucune nouvelles
+        <?= get_field('follow_newsletter', 'options'); ?>
     </p>
     <form class="subhero__input">
         <label for="mail"></label>
