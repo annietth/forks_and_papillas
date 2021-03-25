@@ -1,10 +1,7 @@
 <?php
     $scrollingte_text = get_field('scrollingte_text', 'options');
-    $first_sentences = the_field('$first_sentences', 'options');
-    
-
-    
-    $description = get_field('$description', 'otpions');
+    $first_sentences = get_field('first_sentences', 'options'); 
+    $description = get_field('description', 'otpions');
 ?>
 
 <marquee class="hero__anime" scrollamount="5" width="300">
@@ -17,7 +14,7 @@
      <div class="hero__texts">
 
         <h1 class="hero__text">
-            <?= $first_sentences; ?>
+            <?= get_field('first_sentences', 'options'); ?>
         </h1>
 
         <button>Recherche</button>
