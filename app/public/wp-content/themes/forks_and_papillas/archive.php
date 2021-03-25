@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
+<?php 
+
+var_dump(get_term_link ($type_cuisine , $taxonomie  =  'creole-food' ))
+
+
+?>
+
+<h1>coucocuuuu</h1>
+
+
 
 <div class="list-articles">
 

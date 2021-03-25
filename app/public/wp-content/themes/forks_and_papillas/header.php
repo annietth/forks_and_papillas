@@ -61,7 +61,7 @@
                     $subnavbar_item_url = get_sub_field('url');?>
 
                 <li class="subnavbar__item">
-                    <a href="<?= $subnavbar_item_url; ?>">
+                    <a href="<?php echo trailingslashit(get_home_url().'/creole-food')?>">
                         <img src="<?= get_template_directory_uri(); ?>/img/fork_knife.svg" alt="logo couverts"> 
                         <?= $subnavbar_item_label; ?>
                     </a>
