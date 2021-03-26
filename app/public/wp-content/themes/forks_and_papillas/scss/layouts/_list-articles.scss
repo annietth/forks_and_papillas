@@ -1,5 +1,5 @@
 .list-articles {
-	max-width: 1120px;
+	max-width: 1250px;
 	padding: 0 24px;
 	display: flex;
 	margin: 120px auto;
@@ -9,26 +9,8 @@
 	@include tablet-up {
 		justify-content: center;
 
-		padding: 0;
+		padding: 0 24px;
 		width: 100%;
 	}
 
-	// article {
-	// 	box-shadow: 0px 2px 4px rgba(5, 150, 222, 0.2);
-	// 	width: 384px;
-	// 	// max-height: 342px;
-	// 	border-radius: 8px;
-	// 	background: #FFF;
-	// 	margin-bottom: 32px;
-	// 	transition: all 0.3s;
-	// 	overflow: hidden;
-
-	// 	@include breakpoint(phablet) {
-	// 		margin: 16px;
-	// 	}
-
-	// 	&:hover {
-	// 		transform: translateY(-10px);
-	// 	}
-	// }
 }

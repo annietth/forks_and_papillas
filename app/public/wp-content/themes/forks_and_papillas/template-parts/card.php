@@ -10,7 +10,6 @@ if($taxonomies) {
 $top_restaurant = get_field('top_restaurant');
 $grade = get_field('grade');
 
-
 ?>
 
 
@@ -18,8 +17,10 @@ $grade = get_field('grade');
  
 
 <?php 
+
 if ( has_post_thumbnail() ) { ?>
-<article  class="card" style="background-image: url('<?= the_post_thumbnail_url('listing-card'); ?>');"> 
+<article  class="card" style="background-image: url('<?= the_post_thumbnail_url('listing-card') ?>');"> 
+
 <?php } else { ?>
   <article  class="card" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pizza.jpg');"> 
 <?php } ?>

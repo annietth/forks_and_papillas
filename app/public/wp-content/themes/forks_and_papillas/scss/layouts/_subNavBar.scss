@@ -5,8 +5,8 @@
 
   
   &__container {
-    padding: 16px 0;
-    max-width: 1220px;
+    padding: 16px 24px;
+    max-width: 1190px;
     border-bottom: 1px solid #eef2f6;
     margin: 0 auto;
     overflow-x: scroll;
@@ -14,15 +14,15 @@
 
     
     @include tablet-up {
-      padding: 24px 80px;
+      padding: 24px;
     }
 
 
   }
 
   &__items {
-    padding: 0 24px;
-    margin: 0 auto;
+    padding: 0;
+    // margin: 0 auto;
     width: max-content;
     max-width: 500px;
     height: 100%;
@@ -35,6 +35,10 @@
       display: none;
     }
 
+    @include tablet-up {
+      max-width: 100%;
+
+    }
     @include desktop-up {
       justify-content: space-evenly;
       max-width: none;
@@ -62,10 +66,12 @@
     a {
       text-decoration: none;
       color: $whiteKC;
-      font-family: $proza;
+      font-family: $Spectral;
       font-weight: bold;
       display: flex;
       align-items: center;
+      text-transform: uppercase;
+
 
       img {
         width: 20px;
@@ -78,7 +84,7 @@
 
 $subnavbar_item_on: #FF6542;
 
-.term-italianfood {
+#taxo_italianfood {
 
   .subnavbar__item[data-taxo-type="Italien"] {
     background-color: $subnavbar_item_on;
@@ -88,7 +94,9 @@ $subnavbar_item_on: #FF6542;
     }
   }
 }
-.term-frenchfood {
+
+
+#taxo_frenchfood {
 
   .subnavbar__item[data-taxo-type="Français"] {
     background-color: $subnavbar_item_on;
@@ -98,7 +106,7 @@ $subnavbar_item_on: #FF6542;
     }
   }
 }
-.term-vietnamianfood {
+#taxo_vietnamianfood {
 
   .subnavbar__item[data-taxo-type="Vietnamien"] {
     background-color: $subnavbar_item_on;
@@ -108,7 +116,7 @@ $subnavbar_item_on: #FF6542;
     }
   }
 }
-.term-creolefood {
+#taxo_creolefood {
 
   .subnavbar__item[data-taxo-type="Creole"] {
     background-color: $subnavbar_item_on;
@@ -118,7 +126,7 @@ $subnavbar_item_on: #FF6542;
     }
   }
 }
-.term-orientalfood {
+#taxo_orientalfood {
 
   .subnavbar__item[data-taxo-type="Orientale"] {
     background-color: $subnavbar_item_on;
@@ -128,7 +136,7 @@ $subnavbar_item_on: #FF6542;
     }
   }
 }
-.term-indonesianfood {
+#taxo_indonesianfood {
 
   .subnavbar__item[data-taxo-type="Indonésien"] {
     background-color: $subnavbar_item_on;

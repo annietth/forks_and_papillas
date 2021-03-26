@@ -1,7 +1,7 @@
 .footer{
     margin-top: 10%;
     margin-bottom: 2%;
-    font-family: $proza;
+    font-family: $Spectral;
     @include flexbox (column, center, inherit);
     &__container{
         padding-left: 7%;
@@ -15,7 +15,7 @@
     &__title {
         text-align: center;
         margin-top: 2%;
-        font-family: $proza;
+        font-family: $Spectral;
         @include tablet-up {
             text-align: left;
         }
@@ -37,7 +37,7 @@
             a {
             text-decoration: none;
             color: black;
-            font-family: $proza
+            font-family: $Spectral
             }
         }    
         button {
@@ -59,7 +59,7 @@
         &__address {
             margin-top: 2%;
             & p {
-            font-family: $proza;
+            font-family: $Spectral;
             }
         }
 

@@ -3,7 +3,7 @@
 
 
 
-<h1>taxo FRENCH FOOD</h1>
+<h1>La selection des meilleurs restaurants Français à Paris</h1>
 
 <div class="list-articles">
 

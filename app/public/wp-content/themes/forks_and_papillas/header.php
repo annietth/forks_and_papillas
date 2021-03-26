@@ -7,7 +7,18 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+
+<?php 
+$taxonomies = get_the_terms(get_the_ID(), 'type_cuisine'); 
+
+if($taxonomies) {
+  $taxonomy = $taxonomies[0]->slug;
+  } else {
+  $taxonomy = "";
+}
+?>
+
+<body id="taxo_<?= $taxonomy; ?>" <?php body_class(); ?>>
     
     <?php wp_body_open(); ?>
 

@@ -10,7 +10,7 @@
 
 
 
-<h1>taxo italianfood</h1>
+<h1>La selection des meilleurs restaurants Italiens à Paris</h1>
 
 <div class="list-articles">
 

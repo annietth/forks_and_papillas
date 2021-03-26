@@ -3,7 +3,7 @@
 
 
 
-<h1>taxo indonesianfood</h1>
+<h1>La selection des meilleurs restaurants Indonésiens à Paris</h1>
 
 <div class="list-articles">
 

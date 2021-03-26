@@ -1,9 +1,14 @@
 <?php get_header(); ?>
 
 
+<div class="heroTaxo">
+  <h1>La selection des meilleurs restaurants Orientaux à Paris</h1>
+  <marquee class="" scrollamount="5" width="600">
+  shahiat tayiba - 
+Afiyet olsun - 	Bssaha ! - Chahiya taïba -  Bil hana we chifa - sahten
+</marquee> 
+</div>
 
-
-<h1>taxo orientalfood</h1>
 
 <div class="list-articles">
 
@@ -16,7 +21,7 @@
         array(
           'taxonomy' => 'type_cuisine',
           'field' => 'slug',
-          'terms' => 'orientalfood' // you need to know the term_id of your term "example 1"
+          'terms' => 'haleiwafood' // you need to know the term_id of your term "example 1"
            )
       )    
     

@@ -1,5 +1,5 @@
 marquee {
-    font-family: $proza;
+    font-family: $Spectral;
     @include tablet-up {
         display: none;
     }
@@ -8,7 +8,7 @@ marquee {
     
     @include flexbox(row, flex-start, center);
     margin: auto;
-    font-family: $proza;
+    font-family: $Spectral;
     
     &__anime {
         font-size: 14px;
@@ -79,7 +79,7 @@ marquee {
     margin: auto;
     width: 85%;
     font-size: 15px;
-    text-align: justify; 
+    text-align: left; 
     margin-top: 8%;
 
     @include tablet-up {
