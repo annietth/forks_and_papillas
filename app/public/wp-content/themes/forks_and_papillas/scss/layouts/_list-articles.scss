@@ -1,14 +1,15 @@
 .list-articles {
 	max-width: 1250px;
 	padding: 0 24px;
+	margin: 80px auto;
+
 	display: flex;
-	margin: 120px auto;
 	flex-wrap: wrap;
 	justify-content: center;
-
+	
 	@include tablet-up {
 		justify-content: center;
-
+		margin: 120px auto;
 		padding: 0 24px;
 		width: 100%;
 	}
