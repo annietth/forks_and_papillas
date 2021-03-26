@@ -3,7 +3,7 @@
 
 
 
-<h1>La selection des meilleurs restaurants Indonésiens à Paris</h1>
+<h1 class="title_taxo_page">La selection des meilleurs restaurants Indonésiens à Paris</h1>
 
 <div class="list-articles">
 
