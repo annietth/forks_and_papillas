@@ -6,9 +6,11 @@ marquee {
 }
 .hero {
     
-    @include flexbox(row, flex-start, center);
+    display: flex;
+    flex-direction: column;
     margin: auto;
     font-family: $Spectral;
+    max-width: 1250px;
     
     &__anime {
         font-size: 14px;
@@ -35,95 +37,116 @@ marquee {
     }
     &__texts {
         
-        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         margin-left: 6%;
         @include desktop-up {
             width: 100%;
             margin-left: 0;
         }
-        
         h1 {
-            max-width: 1250px;
             font-size: 24px;
             @include tablet-up {
                 font-size: 33px;
-                padding-bottom: 33%;
+                
             }
             @include desktop-up{
                 width: 100%;
-                margin-left: 19%;
                 font-size: 33px;
                 padding-bottom: 0;
+                margin-left: 6%;
                 
             } 
         }
         span {
             color : $yellow;
-        }
-        button {
+        }    
+
+    }
+        &__mobile {
             background-color: $yellow;
             color: $whiteKC;
             width: 142px;
-            height: 36px;
+            margin: 0 0 8% 6%;
             border: none;
             font-weight: 900;
-            margin-top: 10%;
-            @include tablet-up {
+            padding: 4%;
+            @include tablet-up{
                 display: none;
             }
+
+
+
         }
-    }
-}
-.subhero {
-    font-weight: 900;
-    margin: auto;
-    width: 85%;
-    font-size: 15px;
-    text-align: left; 
-    margin-top: 8%;
 
-    @include tablet-up {
-        margin: -21% 0 0 6%;
-        width: 65%;
-    }
-    @include desktop-up{
-        padding: 2px;
-        margin: -11% 0 0 12%;
-        width: 48%;
-        font-size: 14px;
-        width: 50%;
-    }
-
-    & button {
-        background-color: $yellow;
-        color: $whiteKC;
-        width: 80px;
-        height: 39px;
-        border: none;
+    &__subhero {
         font-weight: 900;
-        margin-top: 4%;
-        
-        & img{
-            width: 30px;
-            margin-top: -3%;
-        }
-    }
-
-    & label {
-        margin: 0;
-        padding: 0;
-    }
-
-    &__input {
-        margin-top: 5%;
+        margin: auto;
+        width: 85%;
+        font-size: 15px;
+        text-align: left; 
+        margin-top: 8%;
         @include tablet-up{
+            width: 64%;
+            margin-top: -17%;
+            margin-left: 6%;
+        }
+
+        @include desktop-up{
+            width: 51%;
+            position: absolute;
+            margin-top: 24%;
+        }
+        @media (min-width: 1440px) {
+            width: 38%;
+            position: absolute;
+            margin-top: 18%;
+            margin-left: 5%;
+
+        }
+        @media (min-width: 2542px) {
+            width: 29%;
+            position: absolute;
+            margin-top: 11%;
+            margin-left: 3%;
+
+        }
+
+        & button {
+            background-color: $yellow;
+            color: $whiteKC;
+            width: 80px;
+            height: 39px;
+            border: none;
+            font-weight: 900;
+            margin-top: 4%;
+            
+            & img{
+                width: 30px;
+                margin-top: -3%;
+            }
+        }
+
+        & label {
             margin: 0;
+            padding: 0;
         }
-        & input{
+
+        & input {
+            margin-top: 5%;
+            @include tablet-up{
+                margin: 0;
+            }
             border: 1px $yellow solid;
-            width: 66%;
+            width: 63%;
             height: 39px; 
+            &__button {
+                margin-left: 2%;
+
+            }
+            
+            
         }
-        
     }
 }
