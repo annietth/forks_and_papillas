@@ -186,6 +186,8 @@
         width: 80%;
         height: auto;
         margin: 0 auto;
+        object-fit: cover;
+
 
         @include tablet-up {
           width: 550px;
