@@ -83,7 +83,7 @@ register_post_type(
 			),
 			'menu_icon'           => 'dashicons-calendar-alt',
 			'supports'            => array('title', 'editor', 'author', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes' ),
-			'taxonomies' 					=> array('type_cuisine'),
+			'taxonomies' 					=> array('category', 'type_cuisine'),
 			'hierarchical'        => false,
 			'public'              => true,
 			'has_archive'         => true,
@@ -104,12 +104,14 @@ function create_topics_hierarchical_taxonomy() {
 		'name' => 'Type de cuisine',
 		'new_item_name' => 'Nouveau type de cuisine',
 		'parent_item' => 'Type de projet parent',
+		'menu_name' => __('Type de cuisine'),
 	);
 	
 	$args = array( 
 		'labels' => $labels,
 		'public' => true, 
 		'show_in_rest' => true,
+		'show_admin_column' => true,
 		'hierarchical' => true, 
 	);
 
