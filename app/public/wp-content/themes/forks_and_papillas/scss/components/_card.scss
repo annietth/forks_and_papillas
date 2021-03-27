@@ -3,12 +3,12 @@
   .card {
     width: 100%;
     min-width: 270px;
-    max-width: 290px;
+    // max-width: 290px;
     min-height: 280px;
     border-radius: 8px;
     border: 1px solid #eef2f6;
     box-shadow: 0 0 16px rgba(51, 51, 51, 0.1);
-    margin: 0 16px 32px 16px;
+    margin: 0 0 32px 0;
     cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,6 +17,8 @@
 
     @include tablet-up {
       margin: 0 16px 32px 16px;
+      max-width: 290px;
+
     }
       
     @include desktop-up {

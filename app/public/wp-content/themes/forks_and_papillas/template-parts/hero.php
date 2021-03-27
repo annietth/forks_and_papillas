@@ -39,10 +39,13 @@
         <img class="hero__image__desktop" style="width:100%"src= "<?php echo get_template_directory_uri(); ?>/img/hero_dktp.png" alt="image_of_desktop">
     </div>
 
-
-      
-
-
-
+    
+    
+    
+    
+    
 </div>
 
+<div class="discover">
+    <h2>Decouvrez les meilleurs restaurants de Paris</h2>
+</div>

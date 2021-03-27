@@ -184,6 +184,30 @@
     }
 }
 
+.discover {
+    padding: 48px 24px 0;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    @include tablet-up {
+        padding: 80px 24px 0;
+
+    }
+
+    h2 {
+        font-family: $Karla;
+
+        @include tablet-up {
+
+            font-size: 32px;
+            text-align: center;
+
+        }
+        @include desktop-up {
+            font-size: 40px;
+        }
+    }
+}
 
 
 
