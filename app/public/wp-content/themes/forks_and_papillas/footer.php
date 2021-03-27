@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 <?php
-    $logo = get_field('logo', 'options');
+    $logo = get_field('logo', 'options')['url'];
     $catch_word = get_field('catch_word', 'options');
     $address = get_field('address', 'options');
     $phone_number = get_field('phone_number', 'options');
