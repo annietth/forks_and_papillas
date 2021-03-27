@@ -3,10 +3,18 @@
   margin: 0 auto;
   height: auto;
 
+  @include tablet-up {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: $whiteKC;
+
+  }
+
   
   &__container {
     padding: 16px 24px;
-    max-width: 1190px;
+    max-width: 1250px;
     border-bottom: 1px solid #eef2f6;
     margin: 0 auto;
     overflow-x: scroll;
@@ -42,6 +50,8 @@
     @include desktop-up {
       justify-content: space-evenly;
       max-width: none;
+      height: 40px;
+
     }
 
   }
@@ -54,8 +64,11 @@
     margin: 4px;
     transition: all 0.3s ease-in-out ;
 
+    @include scale-animation-light;
+
+
     @include desktop-up {
-      margin: 0 4px;
+      margin: 0 8px;
     }
 
     
@@ -84,6 +97,16 @@
 
 $subnavbar_item_on: #FF6542;
 
+#taxo_ {
+
+  .subnavbar__item[data-taxo-type="Tout voir "] {
+    background-color: $subnavbar_item_on;
+
+    a {
+      color: $whiteKC;
+    }
+  }
+}
 #taxo_italianfood {
 
   .subnavbar__item[data-taxo-type="Italien"] {

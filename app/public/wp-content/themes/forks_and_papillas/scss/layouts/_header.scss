@@ -127,6 +127,12 @@
           color: $black-light;
           font-family: $Spectral;
           font-weight: 700;
+          transition: all 250ms ease-in;
+
+          &:hover {
+            border-bottom: 1px solid #FF6542;
+            color: #FF6542;
+          }
         }
            
       }

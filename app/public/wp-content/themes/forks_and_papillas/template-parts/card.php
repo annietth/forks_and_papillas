@@ -29,7 +29,7 @@ if ( has_post_thumbnail() ) { ?>
     href="<?php esc_url( the_permalink() ) ?>" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <?php if(get_field('top_restaurant') == 1): ?>
-      <img class="topicon" src="<?php echo get_template_directory_uri(); ?>/img/topicon.svg" alt="Top restaurant">
+      <img class="topicon" src="<?php echo get_template_directory_uri(); ?>/img/incontournable.svg" alt="Top restaurant">
     <?php endif; ?> 
   
   
