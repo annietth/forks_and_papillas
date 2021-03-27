@@ -95,6 +95,8 @@
             p:first-child {
                 width: 75%;
                 font-weight: 500;
+                line-height: 1.5;
+
 
                 @include tablet-up {
                     width: 100%;
@@ -107,6 +109,8 @@
             .hero__newsletter {
                 margin: 16px 0;
                 width: 100%;
+                line-height: 1.5;
+
 
                 @include tablet-up {
                     margin: 24px 0 8px 0;
