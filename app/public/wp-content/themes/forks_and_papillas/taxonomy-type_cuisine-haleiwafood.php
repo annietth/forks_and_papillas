@@ -2,11 +2,7 @@
 
 
 <div class="heroTaxo">
-  <h1 class="title_taxo_page">La selection des meilleurs restaurants Orientaux à Paris</h1>
-  <marquee class="" scrollamount="5" width="600">
-  shahiat tayiba - 
-Afiyet olsun - 	Bssaha ! - Chahiya taïba -  Bil hana we chifa - sahten
-</marquee> 
+  <h1 class="title_taxo_page">La selection des meilleurs restaurants Hawaïens à Paris</h1>
 </div>
 
 
