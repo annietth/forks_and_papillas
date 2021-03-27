@@ -1,152 +1,362 @@
-marquee {
+.hero__anime {
     font-family: $Spectral;
+    margin: 24px 0 0 0;
+    width: 100vw;
+
     @include tablet-up {
         display: none;
     }
 }
+
+
 .hero {
-    
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    @include flexbox(column, flex-start, flex-start );
     font-family: $Spectral;
     max-width: 1250px;
-    
-    &__anime {
-        font-size: 14px;
-        font-weight: 900;
-        @include desktop-up {
-            display: none;
-        }
-    } 
-    &__image {
-        &__mobile {
-            display: block;
-            @include desktop-up {
-                display: none;
-                
-            }
-        }
-        &__desktop {
-            display: none;
-            @include desktop-up {
-                display: block;
-                
-            }
-        }   
+    position: relative;
+    overflow-x: hidden;
+    margin: 0 auto;
+
+    @include tablet-up {
+        height: 400px;
     }
-    &__texts {
-        
-        display: flex;
+    
+    @include desktop-up {
+        overflow-x: inherit;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        margin-left: 6%;
-        @include desktop-up {
-            width: 100%;
-            margin-left: 0;
+        padding: 0 24px;
+        min-height: 500px;
+        height: auto;
+
+    }
+
+    &__texts {
+        @include flexbox(column, flex-start, flex-start );
+        padding: 40px 24px 0;
+
+        @include tablet-up {
+            max-width: 65%; 
+
         }
+
+        @include desktop-up {
+            max-width: 700px;       
+        }
+
         h1 {
             font-size: 24px;
+
             @include tablet-up {
-                font-size: 33px;
-                
+                font-size: 32px;
+                margin-bottom: 32px;
             }
-            @include desktop-up{
-                width: 100%;
-                font-size: 33px;
-                padding-bottom: 0;
-                margin-left: 6%;
-                
-            } 
+
+            @include desktop-up {
+                font-size: 40px;
+            }
         }
+
         span {
             color : $yellow;
-        }    
+        }   
 
-    }
-        &__mobile {
+        .hero__ctamobile {
             background-color: $yellow;
             color: $whiteKC;
-            width: 142px;
-            margin: 0 0 8% 6%;
+            font-size: 16px;
+            width: 140px;
             border: none;
             font-weight: 900;
-            padding: 4%;
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+
             @include tablet-up{
                 display: none;
             }
-
-
-
         }
 
-    &__subhero {
-        font-weight: 900;
-        margin: auto;
-        width: 85%;
-        font-size: 15px;
-        text-align: left; 
-        margin-top: 8%;
-        @include tablet-up{
-            width: 64%;
-            margin-top: -17%;
-            margin-left: 6%;
-        }
+        .hero__subhero {
+            font-size: 16px;
+            text-align: left; 
+            font-weight: 600;
 
-        @include desktop-up{
-            width: 51%;
-            position: absolute;
-            margin-top: 24%;
-        }
-        @media (min-width: 1440px) {
-            width: 38%;
-            position: absolute;
-            margin-top: 18%;
-            margin-left: 5%;
-
-        }
-        @media (min-width: 2542px) {
-            width: 29%;
-            position: absolute;
-            margin-top: 11%;
-            margin-left: 3%;
-
-        }
-
-        & button {
-            background-color: $yellow;
-            color: $whiteKC;
-            width: 80px;
-            height: 39px;
-            border: none;
-            font-weight: 900;
-            margin-top: 4%;
-            
-            & img{
-                width: 30px;
-                margin-top: -3%;
+            @include tablet-up {
+                font-size: 18px;
+                margin-bottom: 24px;
             }
-        }
 
-        & label {
-            margin: 0;
-            padding: 0;
-        }
+            @include desktop-up {
+                font-size: 24px;
+            }
 
-        & input {
-            margin-top: 5%;
-            @include tablet-up{
+            p:first-child {
+                width: 75%;
+                font-weight: 500;
+
+                @include tablet-up {
+                    width: 100%;
+                    margin-bottom: 16px;
+                }
+
+            }
+            // margin: 32px 0 0 0;
+
+            .hero__newsletter {
+                margin: 16px 0;
+                width: 100%;
+
+                @include tablet-up {
+                    margin: 24px 0 8px 0;
+                }
+
+                @include desktop-up {
+                    margin-bottom: 16px;               
+                 }
+
+            }
+
+            .subhero__input {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            button {
+                background-color: $yellow;
+                color: $whiteKC;
+                width: 80px;
+                height: 40px;
+                border: none;
+                font-weight: 800;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0 8px 8px 0;
+
+                
+                img{
+                    width: 30px;
+                }
+            }
+
+            label {
                 margin: 0;
+                padding: 0;
             }
-            border: 1px $yellow solid;
-            width: 63%;
-            height: 39px; 
-            &__button {
-                margin-left: 2%;
 
-            }
-            
-            
+            input {
+                padding: 8px 16px;
+                border-radius: 8px 0 0 8px;
+                border: 1px solid #eab806;
+                height: 40px;
+            } 
+                
+        }
+
+    }
+    &__image {
+        width: 250px;
+        position: absolute;
+        top: 90px;
+        right: -115px;
+
+        @include tablet-up {
+            width: 450px;
+            top: 0;
+            right: -115px;
+
+        }
+
+        @include desktop-up {
+            position: initial;
+            width: 650px;
+            min-width: 600px;
+
+
+        }
+
+        img {
+            width: 100%;
         }
     }
 }
+
+
+
+
+
+
+// .hero {
+    
+//     display: flex;
+//     flex-direction: column;
+//     margin: auto;
+//     font-family: $Spectral;
+//     max-width: 1250px;
+    
+//     &__anime {
+//         font-size: 14px;
+//         font-weight: 600;
+//         width: 100vw;
+//         margin: 16px 0;
+    
+//         @include desktop-up {
+//             display: none;
+//         }
+//     } 
+//     &__image {
+//         &__mobile {
+//             display: block;
+//             @include desktop-up {
+//                 display: none;
+                
+//             }
+//         }
+//         &__desktop {
+//             display: none;
+//             @include desktop-up {
+//                 display: block;
+                
+//             }
+//         }   
+//     }
+//     &__texts {
+        
+//         display: flex;
+//         flex-direction: row;
+//         margin-left: 6%;
+        
+//         align-items: flex-start;
+//         @include tablet-up {
+
+//         }
+
+//         @include desktop-up {
+//             width: 100%;
+//             margin-left: 0;
+//         }
+//         h1 {
+//             font-size: 24px;
+//             @include tablet-up {
+//                 font-size: 33px;
+                
+//             }
+//             @include desktop-up{
+//                 width: 100%;
+//                 font-size: 33px;
+//                 padding-bottom: 0;
+//                 margin-left: 6%;
+                
+//             } 
+//         }
+//         span {
+//             color : $yellow;
+//         }    
+
+//     }
+//         &__mobile {
+//             background-color: $yellow;
+//             color: $whiteKC;
+//             width: 142px;
+//             margin: 0 0 0 6%;
+//             border: none;
+//             font-weight: 900;
+//             padding: 4%;
+//             border-radius: 8px;
+
+//             @include tablet-up{
+//                 display: none;
+//             }
+
+
+
+//         }
+
+//     &__subhero {
+//         font-weight: 900;
+//         margin: auto;
+//         width: 85%;
+//         font-size: 15px;
+//         text-align: left; 
+//         margin-top: 8%;
+//         @include tablet-up{
+//             width: 64%;
+//             margin-top: -20%;
+//             margin-left: 6%;
+//         }
+
+//         @include desktop-up{
+//             width: 51%;
+//             position: absolute;
+//             margin-top: 24%;
+//         }
+//         @media (min-width: 1440px) {
+//             width: 38%;
+//             position: absolute;
+//             margin-top: 18%;
+//             margin-left: 5%;
+
+//         }
+//         @media (min-width: 2542px) {
+//             width: 29%;
+//             position: absolute;
+//             margin-top: 11%;
+//             margin-left: 3%;
+
+//         }
+
+//         form {
+//             display: flex;
+//             align-items: center;
+//             justify-content: flex-start;
+//         }
+
+//         & button {
+//             background-color: $yellow;
+//             color: $whiteKC;
+//             width: 80px;
+//             height: 39px;
+//             border: none;
+//             font-weight: 900;
+//             margin-top: 4%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             border-radius: 0 8px 8px 0;
+
+            
+//             & img{
+//                 width: 30px;
+//                 margin-top: -3%;
+//             }
+//         }
+
+//         & label {
+//             margin: 0;
+//             padding: 0;
+//         }
+
+//         & input {
+//             margin-top: 5%;
+//             padding: 8px 16px;
+//             border-radius: 8px 0 0 8px;
+
+
+//             @include tablet-up{
+//                 margin-top: 4%;
+//             }
+//             border: 1px $yellow solid;
+//             width: 63%;
+//             height: 39px; 
+//             &__button {
+//                 margin-left: 2%;
+
+//             }
+            
+            
+//         }
+//     }
+// }
