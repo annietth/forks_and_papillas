@@ -118,7 +118,7 @@ $subnavbar_item_on: #FF6542;
 }
 #taxo_creolefood {
 
-  .subnavbar__item[data-taxo-type="Creole"] {
+  .subnavbar__item[data-taxo-type="Créole"] {
     background-color: $subnavbar_item_on;
 
     a {
@@ -126,9 +126,9 @@ $subnavbar_item_on: #FF6542;
     }
   }
 }
-#taxo_orientalfood {
+#taxo_haleiwafood {
 
-  .subnavbar__item[data-taxo-type="Orientale"] {
+  .subnavbar__item[data-taxo-type="Hawaïenne"] {
     background-color: $subnavbar_item_on;
 
     a {
